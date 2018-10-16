@@ -11,6 +11,9 @@ var results = {};
 app.server = http.createServer(app);
 let matchingBabies = ['rod-son', "tony-daughter", 'nolan', 'ye', 'ye-son', 'mark', 'linyan', 'kevin-son', 'james', 'kevin-son', 'kevin', 'aly'];
 
+console.log(__dirname + "/../ui");
+
+
 // logger
 app.use(morgan('dev'));
 
@@ -75,6 +78,8 @@ start.get("/", (req, res) => {
 	});
 });
 app.use("/gameOver", start);
+
+app.use(express.static(__dirname + '/../../baby-shower/dist'));
 
 app.server.listen(7000, () => {
 	console.log(`Started on port ${app.server.address().port}`);
