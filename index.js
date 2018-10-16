@@ -9,7 +9,7 @@ let started = false;
 let app = express();
 var results = {};
 app.server = http.createServer(app);
-let matchingBabies = ['rod-son', "tony-daughter", 'nolan', 'ye', 'ye-son', 'mark', 'linyan', 'kevin-son', 'james', 'kevin-son', 'kevin', 'aly', 'ellen', 'nadir-son', 'francois-daughter', 'nathalie', 'julian', 'tiger'];
+let matchingBabies = ['rod-son', "tony-daughter", 'nolan', 'ye', 'ye-son', 'mark', 'linyan', 'kevin-son', 'james', 'ryan-son', 'kevin', 'aly', 'ellen', 'nadir-son', 'francois-daughter', 'nathalie', 'julian', 'tiger', 'ryan-son', 'kevin-son'];
 
 console.log(__dirname + "/../ui");
 
@@ -81,7 +81,7 @@ app.use("/gameOver", start);
 
 app.use(express.static(__dirname + '/../../baby-shower/dist'));
 
-app.server.listen(7000, () => {
+app.server.listen(80, () => {
 	console.log(`Started on port ${app.server.address().port}`);
 });
 
