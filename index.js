@@ -9,7 +9,7 @@ let started = false;
 let app = express();
 var results = {};
 app.server = http.createServer(app);
-let matchingBabies = ['rod-son', "tony-daughter", 'nolan', 'ye', 'ye-son', 'mark', 'linyan', 'kevin-son', 'james', 'kevin-son', 'kevin', 'aly'];
+let matchingBabies = ['rod-son', "tony-daughter", 'nolan', 'ye', 'ye-son', 'mark', 'linyan', 'kevin-son', 'james', 'kevin-son', 'kevin', 'aly', 'ellen', 'nadir-son', 'francois-daughter', 'nathalie', 'julian', 'tiger'];
 
 console.log(__dirname + "/../ui");
 
